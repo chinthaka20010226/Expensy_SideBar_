@@ -1,54 +1,74 @@
 import React from 'react';
-import IMEGES from '../Assets/index';
 import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-function SideBar(){
+// import '../Style/SideBar.css';
+
+import { 
+    MdOutlineDashboardCustomize,
+    MdNotificationsNone,
+    MdOutlineSettings
+} from "react-icons/md";
+
+import { 
+    RiBankLine,
+    RiBankCardLine,
+    RiOrganizationChart
+} from "react-icons/ri";
+
+import { 
+    TbReportSearch,
+    TbFileAnalytics 
+} from "react-icons/tb";
+
+import { AiOutlineTransaction } from "react-icons/ai";
+
+const SideBar = ({children}) => {
     const menuItems = [
+        {
+            path:"/",
+            name:"UserDashBoard",
+            icon:<MdOutlineDashboardCustomize />
+        },
         {
             path:"/analysis",
             name:"Analysis",
-            icon:<IMEGES.analysis_icon />
+            icon:<TbFileAnalytics />
         },
         {
             path:"/bankAccount",
             name:"BankAccount",
-            icon:<IMEGES.bank_account_icon />
+            icon:<RiBankLine />
         },
         {
             path:"/bankCard",
             name:"BankCard",
-            icon:<IMEGES.bank_card_icon />
+            icon:<RiBankCardLine />
         },
         {
             path:"/notifications",
             name:"Notifications",
-            icon:<IMEGES.notification_icon />
+            icon:<MdNotificationsNone />
         },
         {
             path:"/organization",
             name:"Organization",
-            icon:<IMEGES.organization_icon />
+            icon:<RiOrganizationChart />
         },
         {
             path:"/report",
             name:"Report",
-            icon:<IMEGES.report_icon />
+            icon:<TbReportSearch />
         },
         {
             path:"/setting",
             name:"Setting",
-            icon:<IMEGES.setting_icon />
+            icon:<MdOutlineSettings />
         },
         {
             path:"/transactions",
             name:"Transactions",
-            icon:<IMEGES.transaction_icon />
-        },
-        {
-            path:"/userDashBoard",
-            name:"UserDashBoard",
-            icon:<IMEGES.dashboard_icon />
+            icon:<AiOutlineTransaction />
         }
     ]
 
@@ -64,7 +84,7 @@ function SideBar(){
                 <div className='body-section'>
                     {
                         menuItems.map((item,index) => (
-                            <NavLink to={item.path} key={index} className="link">
+                            <NavLink to={item.path} key={index} className='link' activeclassName='active'>
                                 <div className='link-icon'>{item.icon}</div>
                                 <div className='link-text'>{item.name}</div>
                             </NavLink>
@@ -72,6 +92,7 @@ function SideBar(){
                     }
                 </div>
             </div>
+            <main>{children}</main>
         </div>
     );
 }
