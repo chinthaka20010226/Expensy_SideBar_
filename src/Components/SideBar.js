@@ -1,10 +1,56 @@
 import React from 'react';
-import IMAGES from '../Assets/index';
-import { FaBars } from 'react-icons/fa'
-
-import '../Style/SideBar.css';
+import IMEGES from '../Assets/index';
+import { FaBars } from 'react-icons/fa';
 
 function SideBar(){
+    const menuItems = [
+        {
+            path:"/analysis",
+            name:"Analysis",
+            icon:<IMEGES.analysis_icon />
+        },
+        {
+            path:"/bankAccount",
+            name:"BankAccount",
+            icon:<IMEGES.bank_account_icon />
+        },
+        {
+            path:"/bankCard",
+            name:"BankCard",
+            icon:<IMEGES.bank_card_icon />
+        },
+        {
+            path:"/notifications",
+            name:"Notifications",
+            icon:<IMEGES.notification_icon />
+        },
+        {
+            path:"/organization",
+            name:"Organization",
+            icon:<IMEGES.organization_icon />
+        },
+        {
+            path:"/report",
+            name:"Report",
+            icon:<IMEGES.report_icon />
+        },
+        {
+            path:"/setting",
+            name:"Setting",
+            icon:<IMEGES.setting_icon />
+        },
+        {
+            path:"/transactions",
+            name:"Transactions",
+            icon:<IMEGES.transaction_icon />
+        },
+        {
+            path:"/userDashBoard",
+            name:"UserDashBoard",
+            icon:<IMEGES.dashboard_icon />
+        }
+    ]
+
     return(
         <div className='container'>
             <div className='side-bar'>
@@ -14,13 +60,8 @@ function SideBar(){
                         <FaBars />
                     </div>
                 </div>
-                <div className='body-section'>
-                    <div>
-                        <img src={IMAGES.setting_icon} alt=''></img>
-                    </div>
-                </div>
+                <div className='body-section'></div>
             </div>
-            <main></main>
         </div>
     );
 }
