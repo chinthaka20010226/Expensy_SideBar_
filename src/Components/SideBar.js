@@ -1,6 +1,7 @@
 import React from 'react';
 import IMEGES from '../Assets/index';
 import { FaBars } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 function SideBar(){
     const menuItems = [
@@ -60,7 +61,16 @@ function SideBar(){
                         <FaBars />
                     </div>
                 </div>
-                <div className='body-section'></div>
+                <div className='body-section'>
+                    {
+                        menuItems.map((item,index) => (
+                            <NavLink to={item.path} key={index} className="link">
+                                <div className='link-icon'>{item.icon}</div>
+                                <div className='link-text'>{item.name}</div>
+                            </NavLink>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     );
