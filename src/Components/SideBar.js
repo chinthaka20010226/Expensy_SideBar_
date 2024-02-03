@@ -98,11 +98,11 @@ const SideBar = ({ children }) => {
     return (
         <div className='container_'>
             <div style={{ width: isOpen ? "250px" : "50px" }} className='side-bar'>
-                <div style={{ marginTop: isOpen ? "0px" : "20px" }} className='top-section'>
+                <div style={{ marginTop: isOpen ? "0px" : "60px" }} className='top-section'>
                     <h1 style={{ display: isOpen ? "block" : "none" }} className='logo'>Logo</h1>
-                    <div style={{ marginLeft: isOpen ? "40px" : "-10px" }} className='bar'>
+                    {/* <div style={{ marginLeft: isOpen ? "40px" : "-10px" }} className='bar'>
                         <FaBars onClick={toggle} />
-                    </div>
+                    </div> */}
                 </div>
                 <div style={{ paddingTop: isOpen ? "0px" : "10px" }} className='body-section'>
                     {
