@@ -1,9 +1,9 @@
 /* --- Variable setup --- */
 :root {
     --c-background: #000;
-    --c-font: #fff;
+    --c-font: #000;
     --c-backgroundHover: lightskyblue;
-    --c-fontHover: #000;
+    --c-fontHover: #fff;
 }
 
 
@@ -23,8 +23,8 @@
 .side-bar {
     display: flex;
     flex-direction: column;
-    /*padding: 10px;
-    */background-color: var(--c-background);
+    /* padding: 10px; */
+    background: linear-gradient(#0081f1, #c3f2ff);
     color: var(--c-font);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -36,7 +36,7 @@
 main {
     width: 100%;
     padding: 20px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .top-section {
