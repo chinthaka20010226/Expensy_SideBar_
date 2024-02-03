@@ -1,0 +1,11 @@
+.setting-bank-container{}
+
+.setting-bank-body-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.setting-bank-body-item {
+    display: flex;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Style/SettingBank.css';
 
 import { RiUserSettingsLine } from "react-icons/ri";
 import { IoIosArrowDropright } from "react-icons/io";
@@ -29,27 +30,27 @@ function SettingBank(){
     ]
 
     return(
-        <div className='setting-bank-container container'>
+        <div className='setting-bank-container container w-100'>
             <div className='row'>
-                <div className='col'>
-                    <h1>Bank</h1>
+                <div className='col setting-bank-top-bar w-100'>
+                    <h1 className='setting-bank-top-bar-title'>Bank</h1>
                 </div>
             </div>
             <div className='row'>
-                <div className='col'>
+                <div className='col setting-bank-body w-100'>
                     <div className='row'>
-                        <div className='col'>
+                        <div className='col setting-bank-body-icon w-100'>
                             <RiUserSettingsLine />
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col'>
+                        <div className='col setting-bank-body-items w-100 col-12'>
                             {
                                 menuItems.map((item,index) => (                                                                     
-                                    <div className=''>
-                                        <div className=''>{item.name}</div>
-                                        <NavLink to={item.path} key={index} className=''>
-                                            {item.icon}
+                                    <div className='setting-bank-body-item col-12'>
+                                        <div className='setting-bank-body-item-text col-8'>{item.name}</div>
+                                        <NavLink to={item.path} key={index} className='col-4 setting-bank-body-item-icon'>
+                                            {item.icon}                                                                                         
                                         </NavLink>
                                     </div>
                                 ))

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Style/Setting.css';
 
 import { NavLink, Outlet } from 'react-router-dom';
 
@@ -31,14 +32,14 @@ const Setting = ({children}) => {
     ]
 
     return(
-        <div className='container setting-container'>
+        <div className='container setting-container w-100'>
             <div className='row setting-top-bar'>
-                <div className='col'>
-                    <h1 className='top-bar-title'>Setting</h1>
-                    <div className='top-bar-items'>
+                <div className='col w-100'>
+                    <h1 className='top-bar-title w-100'>Setting</h1>
+                    <div className='top-bar-items col-12 w-100'>
                         {
                             menuItems.map((item,index) => (
-                                <NavLink to={item.path} key={index} className='link_' activeclassName='active_'>
+                                <NavLink to={item.path} key={index} className='link_ col-2' activeclassName='active_'>
                                     <div className='link_-text'>{item.name}</div>                                                                                              
                                 </NavLink>
                             ))

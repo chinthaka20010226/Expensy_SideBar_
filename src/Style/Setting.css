@@ -1,0 +1,9 @@
+.setting-container {}
+
+.top-bar-title {}
+
+.top-bar-items {
+    display: flex;
+    /* gap: 3px; */
+    margin: 30px 0px;
+}
