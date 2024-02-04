@@ -115,7 +115,7 @@ const SideBar = ({ children }) => {
                     }
                 </div>
             </div>
-            <main>{children}</main>
+            <main style={{marginLeft: isOpen ? "250px" : "50px"}}>{children}</main>
         </div>
     );
 }

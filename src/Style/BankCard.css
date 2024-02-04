@@ -1,0 +1,36 @@
+/* --- Variable setup --- */
+:root {
+    --c-backgroundBankCard: #ededed;
+    --c-font: #000;
+    --c-backgroundBankCardHover: rgb(57, 179, 255);
+    --c-fontHover: #fff;
+}
+
+/* --- Body --- */
+.bank-card-container-top-section-title {
+    font-size: 50px;
+}
+
+.bank-card-container-body-section-image {
+    font-size: 120px;
+}
+
+.bank-card {
+    border: none;
+    background: linear-gradient(#0081f1, #c3f2ff);
+}
+
+.bank-card-submit {}
+
+.bank-card-submit-btn {
+    font-weight: 500;
+    background-color: var(--c-backgroundBankCard);
+    color: var(--c-font);
+}
+
+
+/* --- Animation --- */
+.bank-card-submit-btn:hover {
+    background-color: var(--c-backgroundBankCardHover);
+    color: var(--c-fontHover);
+}
