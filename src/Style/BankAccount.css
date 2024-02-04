@@ -2,7 +2,7 @@
 :root {
     --c-backgroundBankCard: #ededed;
     --c-font: #000;
-    --c-backgroundBankCardHover: rgb(57, 179, 255);
+    --c-backgroundBankCardHover: lightskyblue;
     --c-fontHover: #fff;
 }
 
@@ -30,7 +30,7 @@
 
 
 /* --- Animation --- */
-.bank-acc-submit-btn:hover {
+.bank-submit-btn:hover {
     background-color: var(--c-backgroundBankCardHover);
     color: var(--c-fontHover);
 }

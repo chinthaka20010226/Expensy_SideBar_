@@ -9,7 +9,7 @@ function BankAccount(){
             <div class="container py-1 px-md-5 h-100 bank-acc-container">
                 <div className='row'>
                     <div className='col px-md-5 bank-acc-container-top-section'>
-                        <h1 className='bank-acc-container-top-section-title'>Bank</h1>
+                        <h1 className='bank-acc-container-top-section-title'>Bank Account</h1>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -43,8 +43,8 @@ function BankAccount(){
                                         <label for="exampleDatepicker1" class="form-label">Expire Date</label>
                                     </div>
 
-                                    <div className='bank-acc-submit d-flex justify-content-center w-100'>
-                                        <button type="submit" className="btn bank-acc-submit-btn d-flex justify-content-center btn-lg mb-1">Submit</button>
+                                    <div className='bank-submit d-flex justify-content-center w-100'>
+                                        <button type="submit" className="btn bank-submit-btn d-flex justify-content-center btn-lg mb-1">Submit</button>
                                     </div>
 
                                 </form>

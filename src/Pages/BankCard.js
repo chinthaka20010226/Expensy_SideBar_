@@ -1,71 +1,84 @@
 import React from 'react';
+import '../Style/BankCard.css';
+import '../Style/BankAccount.css';
 
 function BankCard(){
     return(
-        <section class="p-4 p-md-5 h-100 w-100">
-            <div class="row d-flex justify-content-center">
-                <div class="col-sm-10">
-                    <div class="card rounded-3">
+        <section class="p-2 p-md-2 h-100 w-100">
+            <div class="row d-flex justify-content-center bank-card-container w-100">
+                <div class="col-sm-11">
+                    <div className='bank-card-top-section w-100'> 
+                        <h1 className='bank-card-top-section-title'>Bank Card</h1>
+                    </div>
+                    <div class="card rounded-3 bank-card-body-card-section w-100">
                         <div class="card-body p-4">
 
-                        <form action="">
+                        <form action="" className='bank-card-body-section-form w-100'>
                             <p class="fw-bold mb-4 pb-2">Saved cards:</p>
 
-                            <div class="d-flex flex-row align-items-center mb-4 pb-1">
-                                <div class="flex-fill mx-3">
-                                    <div class="form-outline">
-                                        <input type="text" id="formControlLgXc" class="form-control form-control-lg"
-                                            value="**** **** **** 3193" />
-                                        <label class="form-label" for="formControlLgXc">Card Number</label>
+                            <div className='card d-flex flex-column justify-content-center h-100 p-3 bank-card-body-section-save w-100'>
+                                <div class="d-flex flex-row align-items-center mb-4 pb-1 bank-card-body-section-save-item">
+                                    <div class="flex-fill mx-3">                                                                           
+                                        <div class="form-outline">
+                                            <input type="text" id="formControlLgXc" class="form-control form-control-lg"
+                                                value="**** **** **** 3193" />
+                                            <label class="form-label" for="formControlLgXc">Card Number</label>
+                                        </div>
                                     </div>
+                                    <a href="#!">Remove card</a>
                                 </div>
-                                <a href="#!">Remove card</a>
-                            </div>
 
-                            <div class="d-flex flex-row align-items-center mb-4 pb-1">
-                                <div class="flex-fill mx-3">
-                                    <div class="form-outline">
-                                        <input type="text" id="formControlLgXs" class="form-control form-control-lg"
-                                            value="**** **** **** 4296" />
-                                        <label class="form-label" for="formControlLgXs">Card Number</label>
+                                <div class="d-flex flex-row align-items-center mb-4 pb-1 bank-card-body-section-save-item">
+                                    <div class="flex-fill mx-3">
+                                        <div class="form-outline">
+                                            <input type="text" id="formControlLgXs" class="form-control form-control-lg"
+                                                value="**** **** **** 4296" />
+                                            <label class="form-label" for="formControlLgXs">Card Number</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <a href="#!">Remove card</a>
-                            </div>
-
-                            <p class="fw-bold mb-4">Add new card:</p>
-
-                            <div class="form-outline mb-4">
-                                <input type="text" id="formControlLgXsd" class="form-control form-control-lg"
-                                    value="Anna Doe" />
-                                <label class="form-label" for="formControlLgXsd">Cardholder's Name</label>
-                            </div>
-
-                            <div class="row mb-4">
-                                <div class="col-7">
-                                    <div class="form-outline">
-                                        <input type="text" id="formControlLgXM" class="form-control form-control-lg"
-                                            value="1234 5678 1234 5678" />
-                                        <label class="form-label" for="formControlLgXM">Card Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <div class="form-outline">
-                                        <input type="password" id="formControlLgExpk" class="form-control form-control-lg"
-                                            placeholder="MM/YYYY" />
-                                        <label class="form-label" for="formControlLgExpk">Expire</label>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="form-outline">
-                                        <input type="password" id="formControlLgcvv" class="form-control form-control-lg"
-                                            placeholder="Cvv" />
-                                        <label class="form-label" for="formControlLgcvv">Cvv</label>
-                                    </div>
+                                    <a href="#!">Remove card</a>
                                 </div>
                             </div>
 
-                            <button class="btn btn-success btn-lg btn-block">Add card</button>
+                            <p class="fw-bold mb-4 pb-2">Add new card:</p>
+
+                            <div className='card d-flex flex-column justify-content-center px-4 bank-card-body-section-add'>
+                                <div class="form-outline mb-4 bank-card-body-section-add-item">
+                                    <input type="text" id="formControlLgXsd" class="form-control form-control-lg"
+                                        value="Anna Doe" />
+                                    <label class="form-label" for="formControlLgXsd">Cardholder's Name</label>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-7">
+                                        <div class="form-outline bank-card-body-section-add-item">
+                                            <input type="text" id="formControlLgXM" class="form-control form-control-lg"
+                                                value="1234 5678 1234 5678" />
+                                            <label class="form-label" for="formControlLgXM">Card Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-outline bank-card-body-section-add-item">
+                                            <input type="password" id="formControlLgExpk" class="form-control form-control-lg"
+                                                placeholder="MM/YYYY" />
+                                            <label class="form-label" for="formControlLgExpk">Expire</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-outline bank-card-body-section-add-item">
+                                            <input type="password" id="formControlLgcvv" class="form-control form-control-lg"
+                                                placeholder="Cvv" />
+                                            <label class="form-label" for="formControlLgcvv">Cvv</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='bank-submit d-flex justify-content-center w-100'>
+                                    <button type="submit" className="btn bank-submit-btn d-flex justify-content-center btn-lg mb-1">Submit</button>
+                                </div>
+                                
+                            </div>
+
                         </form>
                     </div>
                 </div>
