@@ -35,6 +35,7 @@ function App() {
         <Route path="organization" element={<Organization />} />
         <Route path="report" element={<Report />} />
         <Route path="setting" element={<Setting />}>
+          {/* <Route index element={<SettingBank />} /> */}
           <Route path="settingBank" element={<SettingBank />} />
           <Route path="settingNotification" element={<SettingNotfication />} />
           <Route path="settingEmail" element={<SettingEmail />} />

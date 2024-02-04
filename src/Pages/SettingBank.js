@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Style/SettingBank.css';
 
-import { RiUserSettingsLine } from "react-icons/ri";
+import { RiUserSettingsFill } from "react-icons/ri";
 import { IoIosArrowDropright } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
 
@@ -30,17 +30,17 @@ function SettingBank(){
     ]
 
     return(
-        <div className='setting-bank-container container w-100'>
+        <div className='setting-bank-container w-100'>
             <div className='row'>
                 <div className='col setting-bank-top-bar w-100'>
                     <h1 className='setting-bank-top-bar-title'>Bank</h1>
                 </div>
             </div>
             <div className='row'>
-                <div className='col setting-bank-body w-100'>
+                <div className='col card setting-bank-body w-100'>
                     <div className='row'>
                         <div className='col setting-bank-body-icon w-100'>
-                            <RiUserSettingsLine />
+                            <RiUserSettingsFill />
                         </div>
                     </div>
                     <div className='row'>
@@ -48,9 +48,9 @@ function SettingBank(){
                             {
                                 menuItems.map((item,index) => (                                                                     
                                     <div className='setting-bank-body-item col-12'>
-                                        <div className='setting-bank-body-item-text col-8'>{item.name}</div>
-                                        <NavLink to={item.path} key={index} className='col-4 setting-bank-body-item-icon'>
-                                            {item.icon}                                                                                         
+                                        <div className='setting-bank-body-item-text col-11'>{item.name}</div>
+                                        <NavLink to={item.path} key={index} className='col-1 setting-bank-body-item-icon'>
+                                            {item.icon}                                                                                                                                                                                      
                                         </NavLink>
                                     </div>
                                 ))
