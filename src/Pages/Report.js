@@ -3,7 +3,7 @@ import React from 'react';
 function Report(){
     return(
         <div>
-            <h1>This is a Report page</h1>
+            <h1>This is a Report</h1>
         </div>
     );
 }
