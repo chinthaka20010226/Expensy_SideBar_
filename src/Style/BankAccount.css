@@ -1,12 +1,19 @@
 /* --- Variable setup --- */
 :root {
-    --c-backgroundBankCard: #ededed;
-    --c-font: #000;
-    --c-backgroundBankCardHover: lightskyblue;
+    --c-backgroundSideBar: #000000;
+    --c-fontSideBar: #76847e;
+    --c-backgroundHoverSideBar: #03d47c;
     --c-fontHover: #fff;
+    --c-activeBackgroundSideBar : #03d47c;
+    --c-btnHover: #00c271;
 }
 
+
 /* --- Body --- */
+.bank-acc-container {
+    margin-top: 80px;
+}
+
 .bank-acc-container-top-section-title {
     font-size: 50px;
 }
@@ -17,20 +24,21 @@
 
 .bank-acc-card {
     border: none;
-    background: linear-gradient(#0081f1, #c3f2ff);
+    /* z-index: -1; */
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
 }
 
 .bank-acc-submit {}
 
-.bank-acc-submit-btn {
-    font-weight: 500;
-    background-color: var(--c-backgroundBankCard);
-    color: var(--c-font);
+.bank-submit-btn {
+    font-weight: 600;
+    background: var(--c-activeBackgroundSideBar);
+    color: var(--c-fontHover);
 }
 
 
 /* --- Animation --- */
 .bank-submit-btn:hover {
-    background-color: var(--c-backgroundBankCardHover);
+    background-color: var(--c-btnHover);
     color: var(--c-fontHover);
 }
